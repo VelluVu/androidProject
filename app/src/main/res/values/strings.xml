@@ -7,4 +7,6 @@
     <string name="hellothisismainActivity">Hello This is MainActivity</string>
     <string name="trybuttonsbelow">Try Buttons Below</string>
     <string name="thisisthirdactivity">This is Third Activity</string>
+    <string name="typehere">Type Something</string>
+    <string name="typeheretwo">Type Something</string>
 </resources>

@@ -7,13 +7,19 @@ import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.EditText;
 
 import com.squareup.picasso.Picasso;
+
+import org.w3c.dom.Text;
 
 public class ActivityThree extends Activity{
 
     Button buttonThree;
     ImageView imageView;
+    TextView textViewFour;
+    TextView textViewFive;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -21,6 +27,12 @@ public class ActivityThree extends Activity{
         setContentView(R.layout.activity_three);
 
         buttonThree = (Button) findViewById(R.id.buttonthree);
+
+        textViewFour = (TextView) findViewById(R.id.textView3);
+        textViewFive = (TextView) findViewById(R.id.textView4);
+
+        textViewFour.setText(getIntent().getStringExtra("com.example.vellu.androidproject.showthree"));
+        textViewFive.setText(getIntent().getStringExtra("com.example.vellu.androidproject.showfour"));
 
         imageView = (ImageView) findViewById(R.id.imageView);
 
