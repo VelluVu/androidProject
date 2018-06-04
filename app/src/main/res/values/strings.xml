@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">androidProject</string>
+    <string name="activitytwo">Activity Two</string>
+    <string name="activitythree">Activity Three</string>
+    <string name="activityfour">Activity Four</string>
+    <string name="mainactivity">Main Activity</string>
+    <string name="hellothisismainActivity">Hello This is MainActivity</string>
+    <string name="trybuttonsbelow">Try Buttons Below</string>
+    <string name="thisisthirdactivity">This is Third Activity</string>
 </resources>
