@@ -20,6 +20,8 @@ public class ActivityThree extends Activity{
     ImageView imageView;
     TextView textViewFour;
     TextView textViewFive;
+    String inputOne;
+    String inputTwo;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -45,7 +47,11 @@ public class ActivityThree extends Activity{
         buttonThree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                inputOne = textViewFour.getText().toString();
+                inputTwo = textViewFive.getText().toString();
                 Intent moveTo = new Intent(ActivityThree.this, ActivityFour.class);
+                moveTo.putExtra("com.example.vellu.androidproject.showFive",inputOne);
+                moveTo.putExtra("com.example.vellu.androidproject.showSix",inputTwo);
                 startActivity(moveTo);
                 finish();
             }
