@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">androidProject</string>
+    <string name="app_name">Introduction to Android Programming</string>
     <string name="activitytwo">Activity Two</string>
     <string name="activitythree">Activity Three</string>
     <string name="activityfour">Activity Four</string>
@@ -19,4 +19,6 @@
     <string name="four">4</string>
     <string name="five">5</string>
     <string name="six">6</string>
+    <string name="todo">TODO</string>
+    <string name="option">Option1</string>
 </resources>
