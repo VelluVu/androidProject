@@ -56,7 +56,6 @@ public class MainActivity extends AppCompatActivity {
                 moveTo.putExtra("com.example.vellu.androidproject.showthree",typeHere.getText().toString());
                 moveTo.putExtra("com.example.vellu.androidproject.showfour",typeHereTwo.getText().toString());
                 startActivity(moveTo);
-                finish();
             }
         });
     }
