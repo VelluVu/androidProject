@@ -1,6 +1,8 @@
 package com.example.vellu.androidproject;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,6 +11,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.squareup.picasso.Picasso;
 
@@ -27,6 +30,8 @@ public class ActivityThree extends Activity{
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_three);
+
+        Toast.makeText(ActivityThree.this, R.string.youopnactthree, Toast.LENGTH_SHORT).show();
 
         buttonThree = (Button) findViewById(R.id.buttonthree);
 
@@ -47,13 +52,33 @@ public class ActivityThree extends Activity{
         buttonThree.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                inputOne = textViewFour.getText().toString();
-                inputTwo = textViewFive.getText().toString();
-                Intent moveTo = new Intent(ActivityThree.this, ActivityFour.class);
-                moveTo.putExtra("com.example.vellu.androidproject.showFive",inputOne);
-                moveTo.putExtra("com.example.vellu.androidproject.showSix",inputTwo);
-                startActivity(moveTo);
-                finish();
+
+                AlertDialog.Builder builder = new AlertDialog.Builder(ActivityThree.this);
+
+                builder.setCancelable(true);
+                builder.setTitle(R.string.activitychange);
+                builder.setMessage(R.string.areyousure);
+                builder.setNegativeButton(R.string.no, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        dialog.cancel();
+                    }
+                });
+                builder.setPositiveButton(R.string.yes, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        inputOne = textViewFour.getText().toString();
+                        inputTwo = textViewFive.getText().toString();
+                        Intent moveTo = new Intent(ActivityThree.this, ActivityFour.class);
+                        moveTo.putExtra("com.example.vellu.androidproject.showFive",inputOne);
+                        moveTo.putExtra("com.example.vellu.androidproject.showSix",inputTwo);
+                        startActivity(moveTo);
+                        finish();
+                    }
+                });
+                builder.show();
+
             }
         });
     }

@@ -24,4 +24,17 @@
     <string name="list">List</string>
     <string name="gocalc">Calculator</string>
     <string name="nice">Nice</string>
+    <string name="changing_activity">Changing Activity</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="areyousure">Are you sure?</string>
+    <string name="activitychange">Activity change</string>
+    <string name="alertreceive">Alert Received</string>
+    <string name="youopenedtwo">You Opened Activity Two</string>
+    <string name="thisismain">This is Main</string>
+    <string name="quitapp">Exit Application</string>
+    <string name="youopnactthree">You Opened Activity Three</string>
+    <string name="youopnactfour">You Opened Activity Four</string>
+    <string name="youopnnumact">You Opened Number Activity</string>
+    <string name="youopnlistact">You Opened List Activity</string>
 </resources>
