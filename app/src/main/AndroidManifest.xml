@@ -26,6 +26,12 @@
         <activity android:name=".ActivityFour">
 
         </activity>
+        <activity android:name=".ActivityList">
+
+        </activity>
+        <activity android:name=".NumberActivity">
+
+        </activity>
     </application>
 
 </manifest>

@@ -22,6 +22,7 @@
         android:layout_centerVertical="true"
         android:layout_toEndOf="@+id/pic"
         android:text="@string/option"
-        android:textSize="24sp" />
+        android:textSize="24sp"
+        android:layout_toRightOf="@+id/pic" />
 
 </RelativeLayout>

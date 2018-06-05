@@ -1,33 +1,52 @@
 package com.example.vellu.androidproject;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.widget.ArrayAdapter;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.BaseAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
 
-import java.util.HashMap;
-import java.util.List;
+import org.w3c.dom.Text;
 
-public class ListAdapter extends ArrayAdapter {
+public class ListAdapter extends BaseAdapter {
 
-    HashMap<Object, Integer> mIdMap = new HashMap<Object, Integer>();
+    Context mContext;
+    String[] Title;
+    int[] Imge;
+    LayoutInflater inflater;
 
+    public ListAdapter(Context applicationContext, String[] Title, int[] Imge) {
+        this.mContext = mContext;
+        this.Title = Title;
+        this.Imge = Imge;
+        inflater = (LayoutInflater.from(applicationContext));
+    }
 
-    public ListAdapter(@NonNull Context context, int resource, @NonNull List objects) {
-        super(context, resource, objects);
+    @Override
+    public int getCount() {
+        return Title.length;
+    }
 
-        for (int i = 0; i < objects.size() ; ++i) {
-            mIdMap.put(objects.get(i), i);
-        }
+    @Override
+    public Object getItem(int position) {
+        return null;
     }
 
     @Override
     public long getItemId(int position) {
-        Object item = getItem(position);
-        return mIdMap.get(item);
+        return position;
     }
 
     @Override
-    public boolean hasStableIds() {
-        return true;
+    public View getView(int position, View convertView, ViewGroup parent) {
+        convertView = inflater.inflate(R.layout.list_row, null);
+        TextView item = (TextView) convertView.findViewById(R.id.secondLine);
+        ImageView image = (ImageView) convertView.findViewById(R.id.pic);
+        item.setText(Title[position]);
+        image.setImageResource(Imge[position]);
+        return convertView;
     }
+
 }
