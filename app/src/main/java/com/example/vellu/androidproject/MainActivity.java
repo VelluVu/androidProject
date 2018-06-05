@@ -42,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent moveTo = new Intent(MainActivity.this, ActivityTwo.class);
                 moveTo.putExtra("com.example.vellu.androidproject.showone",typeHere.getText().toString());
                 moveTo.putExtra("com.example.vellu.androidproject.showtwo",typeHereTwo.getText().toString());
+                finish();
                 startActivity(moveTo);
                 finish();
             }

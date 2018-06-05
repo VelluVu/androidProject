@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Introducción a la programación de Android</string>
+    <string name="activitytwo">Actividad dos</string>
+    <string name="activitythree">Actividad tres</string>
+    <string name="activityfour">Actividad cuatro</string>
+    <string name="mainactivity">Actividad principal</string>
+    <string name="hellothisismainActivity">Hola, esto es MainActivity</string>
+    <string name="trybuttonsbelow">Pruebe los botones a continuación</string>
+    <string name="thisisthirdactivity">Esta es la tercera actividad</string>
+    <string name="typehere">Escribe algo</string>
+    <string name="typeheretwo">Escribe algo</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="todo">QUE HACER</string>
+    <string name="option">Opción 1</string>
+</resources>
