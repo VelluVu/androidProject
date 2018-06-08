@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/something1"
+        android:title="@string/somethingone">
+    </item>
+
+    <item
+        android:id="@+id/something2"
+        android:title="@string/somethingtwo">
+    </item>
+
+    <item
+        android:id="@+id/something3"
+        android:title="@string/somethingthree">
+    </item>
+
+    <item
+        android:id="@+id/something4"
+        android:title="@string/somethingfour">
+    </item>
+
+</menu>

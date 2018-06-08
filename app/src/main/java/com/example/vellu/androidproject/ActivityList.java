@@ -5,6 +5,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -25,11 +26,42 @@ public class ActivityList extends Activity {
             R.drawable.ic_beach_access_black_24dp,
             R.drawable.ic_beach_access_black_24dp};
 
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("ActivityList","Starting");
+    }
+
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        Log.d("ActivityList", "Resuming");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d("ActivityList", "Restarting");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("ActivityList", "Destroying");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("ActivityList", "Stopping");
+    }
+
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list);
+        Log.d("ActivityList", "Creating");
 
         Toast.makeText(ActivityList.this, R.string.youopnlistact, Toast.LENGTH_SHORT).show();
 

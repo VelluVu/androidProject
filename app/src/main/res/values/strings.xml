@@ -37,4 +37,24 @@
     <string name="youopnactfour">You Opened Activity Four</string>
     <string name="youopnnumact">You Opened Number Activity</string>
     <string name="youopnlistact">You Opened List Activity</string>
+    <string name="youclicksome1">You clicked Something1</string>
+    <string name="youclicksome2">You clicked Something2</string>
+    <string name="youclicksome3">You clicked Something3</string>
+    <string name="youclicksome4">You clicked Something4</string>
+    <string name="somethingone">Something One</string>
+    <string name="somethingtwo">Something Two</string>
+    <string name="somethingthree">Something Three</string>
+    <string name="somethingfour">Something Four</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="address">Address</string>
+    <string name="city">City</string>
+    <string name="country">Country</string>
+    <string name="clickhere">click here</string>
+    <string name="inputdata">Input Data</string>
+    <string name="add">ADD</string>
+    <string name="delete">DELETE</string>
+    <string name="id">ID</string>
+    <string name="enteruserid">Enter User ID For Altering Data</string>
+    <string name="show">SHOW</string>
 </resources>

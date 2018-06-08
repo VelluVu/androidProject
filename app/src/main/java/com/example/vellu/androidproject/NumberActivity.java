@@ -7,6 +7,7 @@ import android.graphics.Color;
 import android.media.SoundPool;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
 import android.widget.Button;
@@ -19,9 +20,41 @@ public class NumberActivity extends Activity implements View.OnClickListener {
     TextView nicetext;
 
     @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("NumberActivity","Starting");
+    }
+
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        Log.d("NumberActivity", "Resuming");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d("NumberActivity", "Restarting");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("NumberActivity", "Destroying");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("NumberActivity", "Stopping");
+    }
+
+
+    @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.number_layout);
+        Log.d("NumberActivity", "Creating");
 
         Toast.makeText(NumberActivity.this, R.string.youopnnumact, Toast.LENGTH_SHORT).show();
 

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/addbutton"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="@string/add"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="@color/shadow"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="16dp" />
+
+    <Button
+        android:id="@+id/deletebutton"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="@string/delete"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="@color/shadow"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="16dp" />
+
+    <Button
+        android:id="@+id/showbutton"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:text="@string/show"
+        android:background="@drawable/buttonshape"
+        android:shadowColor="@color/shadow"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:textColor="@color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/addbutton"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/addbutton" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/name"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewName"
+        android:ems="10"
+        android:hint="@string/clickhere"
+        android:inputType="textPersonName"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewSurName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextName"
+        android:text="@string/surname"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/editTextSurName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewSurName"
+        android:ems="10"
+        android:hint="@string/clickhere"
+        android:inputType="textPersonName"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextSurName"
+        android:text="@string/address"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewAddress"
+        android:ems="10"
+        android:hint="@string/clickhere"
+        android:inputType="textPersonName"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewCity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextAddress"
+        android:text="@string/city"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewCity"
+        android:ems="10"
+        android:hint="@string/clickhere"
+        android:inputType="textPersonName"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textViewCountry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editTextCity"
+        android:text="@string/country"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true" />
+
+    <EditText
+        android:id="@+id/editTextCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textViewCountry"
+        android:ems="10"
+        android:hint="@string/clickhere"
+        android:inputType="textPersonName"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextId"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addbutton"
+        android:layout_alignEnd="@+id/deletebutton"
+        android:ems="10"
+        android:hint="@string/enteruserid"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>
